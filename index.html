@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productcatalogus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="controls">
+
+    <div class="filters">
+      <button data-color="Alle" class="active">Alle</button>
+      <button data-color="Rood">Rood</button>
+      <button data-color="Zwart">Zwart</button>
+      <button data-color="Blauw">Blauw</button>
+      <button data-color="Wit">Wit</button>
+    </div>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Zoek op merk of model..."
+    />
+
+    <select id="sortPrice">
+      <option value="">Sorteer op prijs</option>
+      <option value="low-high">Prijs: laag → hoog</option>
+      <option value="high-low">Prijs: hoog → laag</option>
+    </select>
+
+  </div>
+
+  <p id="productCount"></p>
+  <p id="noResults" class="hidden">Geen producten gevonden 😢</p>
+
+  <div class="product-grid" id="productGrid">
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
